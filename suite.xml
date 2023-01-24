@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ChromeSuite">
+    <parameter name="browser" value="chrome" />
+    <listeners>
+        <listener class-name="listeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="GoogleTest">
+        <parameter name="url" value="https://www.google.com"/>
+        <classes>
+            <class name="tests.AllTests"/>
+        </classes>
+    </test>
+</suite>
